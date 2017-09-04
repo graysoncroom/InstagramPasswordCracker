@@ -22,7 +22,7 @@ with Browser('firefox', headless=True) as browser:
     for password in sys.stdin:
         if len(password) < 6:
             print('Skipping password: ' + password)
-            break
+            continue
 
         print('Testing password: ' + password)
         password_form.clear()
