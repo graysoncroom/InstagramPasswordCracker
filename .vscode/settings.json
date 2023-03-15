@@ -12,5 +12,6 @@
     ],
     "python.testing.pytestEnabled": false,
     "vsintellicode.features.python.deepLearning": "enabled",
-    "vsintellicode.modelDownloadPath": ""
+    "vsintellicode.modelDownloadPath": "",
+    "editor.renderControlCharacters": false
 }
