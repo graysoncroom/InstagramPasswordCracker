@@ -11,7 +11,13 @@
         "*test.py"
     ],
     "python.testing.pytestEnabled": false,
+<<<<<<< Updated upstream
     "vsintellicode.features.python.deepLearning": "enabled",
     "vsintellicode.modelDownloadPath": "",
     "editor.renderControlCharacters": true
+=======
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "master"
+    ]
+>>>>>>> Stashed changes
 }
