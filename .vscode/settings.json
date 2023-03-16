@@ -13,5 +13,19 @@
     "python.testing.pytestEnabled": false,
     "vsintellicode.features.python.deepLearning": "enabled",
     "vsintellicode.modelDownloadPath": "",
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "\"editor.unicodeHighlight.allowedCharacters\": {   \"editor.unicodeHighlight.allowedCharacters\"": true,
+        "editor.unicodeHighlight.allowedCharacters": true
+    },
+    "editor.unicodeHighlight.includeComments": true,
+    "editor.unicodeHighlight.includeStrings": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "_os": false,
+        "_vscode": false
+    },
+    "terminal.integrated.automationProfile.linux": {}
 }
