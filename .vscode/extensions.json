@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "visualstudioexptteam.vscodeintellicode"
+        "visualstudioexptteam.vscodeintellicode",
+        "donjayamanne.python-extension-pack"
     ]
 }

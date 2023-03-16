@@ -1,5 +1,9 @@
 #!/bin/python
+<<<<<<< HEAD
 #from splinter import Browser
+=======
+#from tkinter import Browser
+>>>>>>> 4acfaa876b6d87300f7b5c8d6d830f1d2174ff85
 import time
 import sys
 <<<<<<< Updated upstream
