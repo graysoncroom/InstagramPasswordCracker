@@ -22,12 +22,12 @@ def logInSuccess(Browser):
 
 #<<<<<<< Updated upstream
 ("account_username =sys.argv[1]")
-"with Browser('firefox', headless=True) to with Browser('chrome', headless=True)"
-BROWSE.visit('https://www.instagram.com')
-BROWSE.find_by_text('Log in').first.click()
-username_form = BROWSE.find_by_name('username').first
-password_form = BROWSE.find_by_name('password').first
-login_button = BROWSE.find_by_text('Log in').first
+#with Browser ('firefox', headless=True) with Browser('chrome', headless=True)
+'browser'.visit ('https://www.instagram.com')
+'browse'.find_by_text('Log in').first.click()
+username_form = 'browse'.find_by_name('username').first
+password_form = 'browse'.find_by_name('password').first
+login_button = 'browse'.find_by_text('Log in').first
 username_form.fill('username')
 for password in sys.stdin:correctPassword = None
 #=======
