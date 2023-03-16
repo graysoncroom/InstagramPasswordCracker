@@ -1,5 +1,5 @@
 #!/bin/python
-from tkinter import Browser
+#from tkinter import Browser
 import time
 import sys
 from tkinter import Browser
