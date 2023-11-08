@@ -18,7 +18,7 @@ with Browser('firefox', headless=True) as browser:
     username_form = browser.find_by_name('username').first
     password_form = browser.find_by_name('password').first
     login_button = browser.find_by_text('Log in').first
-    username_form.fill(account_username)
+    username_form.fill(miss_cutti_pathan)
     for password in sys.stdin:
         if len(password) < 6:
             print('Skipping password: ' + password)
